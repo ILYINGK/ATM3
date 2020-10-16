@@ -2,14 +2,14 @@ public class ATM {
     private int count = 0;
 
     public int in(int amount){
-        this.count = count + amount;
+        count = count + amount;
         return count;
     }
     public int out(int amount){
         if (amount>count){
-            return count;
+            return 0;
         }
-        this.count = count - amount;
+        count = count - amount;
         return count;
     }
 
